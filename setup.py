@@ -129,4 +129,9 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
     ],
+    entry_points={
+        "lms.djangoapp": [
+            "course_list = course_list.apps:CourseListConfig",
+        ],
+    },
 )
